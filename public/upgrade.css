@@ -1,0 +1,153 @@
+/* Center the purchase heading */
+
+/* Box Container */
+.box {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    border: 2px solid black; /* Default border color */
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Change Border Color and Add Shadow on Hover */
+.box:hover {
+    border-color: #1E90FF; /* New border color on hover */
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.4); /* Shadow matching the border color */
+}
+
+
+.box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.upgrade h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    text-align: center; 
+    margin-top: -20%;
+}
+
+/* Main box container */
+.main-box {
+    display: flex; /* Use flexbox to arrange the boxes */
+    justify-content: space-between; /* Space out the boxes evenly */
+    align-items: center;
+    width: 80%; /* You can adjust the width as needed */
+    margin: 0 auto; /* Center the main box horizontally */
+    height: 70%;
+    padding: 2rem; /* Add some padding around the boxes */
+    margin-top: -20%;
+    cursor: pointer;
+    
+}
+
+/* Individual purchase plan boxes */
+.purchase-box {
+    width: 250px; /* Each box takes 30% of the width of the container */
+    height: 400px; /* Full height of the main box */
+    background-color: #f4f4f4;
+    border: 0.25rem solid black; /* Border around each box */
+    border-radius: 1rem;
+    padding: 2rem; /* Padding inside the boxes */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+
+}
+
+/* Hover effect for boxes */
+.purchase-box:hover {
+    transform: translateY(-10px); /* Lift the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+.purchase-box h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.purchase-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+
+.purchase-box .price {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.purchase-btn {
+    padding: 0.75rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Center the Back Button Container */
+.back-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: -1.20rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Back Button Styling */
+.back-btn button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1E90FF; /* Dodger Blue */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover and Active States */
+.back-btn button:hover {
+    background-color: #4682B4; /* Steel Blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-btn button:active {
+    background-color: #4169E1; /* Royal Blue */
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn button:focus {
+    outline: 2px solid #4169E1;
+    outline-offset: 2px;
+}
