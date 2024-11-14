@@ -1,0 +1,56 @@
+<section class="hero-section">
+    <div class="hero-content">
+        <!-- Hero Heading -->
+        <div class="hero-text">
+            <h1>Transform Your Digital Presence</h1>
+            <span class="hero-subtitle">with Smart QR Solutions</span>
+        </div>
+        
+        <!-- Hero Description -->
+        <p class="hero-description">
+            Create, manage, and track dynamic QR codes. Boost your engagement with real-time analytics and professional tools.
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+            <button class="cta-primary">
+                Get Started Free
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="cta-secondary">
+                Watch Demo
+            </button>
+        </div>
+        
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <% const features = [
+                {
+                    title: "Dynamic QR Codes",
+                    description: "Create and update QR codes that adapt to your needs"
+                },
+                {
+                    title: "Real-time Analytics",
+                    description: "Track scans and user engagement with detailed insights"
+                },
+                {
+                    title: "Professional Tools",
+                    description: "Advanced features for business and enterprise needs"
+                }
+            ] %>
+            
+            <% features.forEach(feature => { %>
+                <div class="feature-card">
+                    <h3><%= feature.title %></h3>
+                    <p><%= feature.description %></p>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+    
+    <!-- Decorative Elements -->
+    <div class="hero-background">
+        <div class="blur-circle-1"></div>
+        <div class="blur-circle-2"></div>
+    </div>
+</section>

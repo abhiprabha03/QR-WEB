@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Added Roboto font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Navigation Bar -->
     <div class="nav-bar">
         <div class="main-content">
-            <a href="/home" class="nav-btn"><i class="fas fa-home"></i> Home</a>
-            <a href="/home/qr-codes" class="nav-btn"><i class="fas fa-qrcode"></i> QR Codes</a>
-            <a href="/home/analytics" class="nav-btn"><i class="fas fa-chart-line"></i> Analytics</a>
-            <a href="/home/settings" class="nav-btn"><i class="fas fa-cog"></i> Settings</a>
-
-            <!-- Updated input ID to match search.js -->
+            <a href="/home" class="nav-btn" aria-label="Go to Home"><i class="fas fa-home"></i> Home</a>
+            <a href="/home/qr-codes" class="nav-btn" aria-label="Go to QR Codes"><i class="fas fa-qrcode"></i> QR Codes</a>
+            <a href="/home/analytics" class="nav-btn" aria-label="Go to Analytics"><i class="fas fa-chart-line"></i> Analytics</a>
+            <a href="/home/settings" class="nav-btn" aria-label="Go to Settings"><i class="fas fa-cog"></i> Settings</a>
+            
+            <!-- Search Bar -->
             <div class="search-container">
-                <input type="text" id="search-Analytics" placeholder="Search" >
+                <input type="text" id="search-Analytics" placeholder="Search" aria-label="Search Analytics">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                
             </div>
-
-            <a href="/home/upgrade" class="upgrade-btn">UPGRADE</a>
+            
+            <!-- Upgrade Button -->
+            <a href="/home/upgrade" class="upgrade-btn" aria-label="Go to Upgrade Page">UPGRADE</a>
         </div>
+
+        <!-- Sign Up and Sign In Buttons -->
         <a href="/home/sign-up" class="sign-up">
-            <button class="sign-up-btn">SIGN UP</button>
-            <button class="sign-in-btn">SIGN IN</button>
+            <button class="sign-up-btn" aria-label="Sign up for an account">SIGN UP</button>
+            <button class="sign-in-btn" aria-label="Sign in to your account">SIGN IN</button>
         </a>
     </div>
 
-    <!-- Link to the JavaScript file -->
+    <!-- Hero Section (included from partials) -->
+    <%- include('partials/hero') %>
+
+    <!-- Scripts -->
     <script src="/search.js"></script>
 </body>
 </html>
