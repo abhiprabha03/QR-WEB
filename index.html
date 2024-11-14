@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>frontend</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  
+  <div class="nav-bar">
+    <div class="hamburger" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="main-content">
+      
+      <input type="text" id="search Analytics" placeholder="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <button class="search-btn">UPGRADE</button>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>QR-CUSTOMIZE</h2>
+      <i class="fas fa-times close-btn" onclick="toggleSidebar()"></i>
+    </div>
+    <!-- Sidebar menu items -->
+    <a href="#home" class="menu-item"><i class="fas fa-home"></i> Home</a>
+    <a href="#links" class="menu-item"><i class="fas fa-link"></i> Links</a>
+    <a href="#qr-codes" class="menu-item"><i class="fas fa-qrcode"></i> QR Codes</a>
+    <a href="#link-in-bio" class="menu-item"><i class="fas fa-user"></i> Link-in-bio</a>
+    <a href="#analytics" class="menu-item"><i class="fas fa-chart-line"></i> Analytics</a>
+    <a href="#campaigns" class="menu-item"><i class="fas fa-bullhorn"></i> Campaigns</a>
+    <a href="#custom-links" class="menu-item"><i class="fas fa-star"></i> Custom Links</a>
+    <a href="#settings" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
+  </div>
+  <div class="flex gap-2 md:gap-4 items-center cursor-pointer hover:bg-[#f4f6fa]  py-[0.2rem] px-0 lg:px-4 rounded-md relative"><span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"><span class="flex h-full w-full items-center justify-center rounded-full bg-muted">KS</span></span><div class="flex gap-1"><h1 class=" text-sm md:text-base ">Krishna Singha</h1><i class="fa-solid fa-sort-down"></i></div> </div>
+  <div class="spotify-card">
+    <img src="WhatsApp Image 2024-11-08 at 18.45.36_5edff39e.jpg" alt="QR Sticker" class="spotify-card-img">
+    <div class="spotify-card-content">
+    
+        <button class="spotify-card-btn"></button>
+    </div>
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
